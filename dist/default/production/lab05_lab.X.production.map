@@ -1,0 +1,127 @@
+Microchip MPLAB XC8 PIC(R) Assembler V2.36
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.36\pic\dat\en_msgs.txt -cs \
+  -h+dist/default/production\lab05_lab.X.production.sym \
+  --cmf=dist/default/production\lab05_lab.X.production.cmf -z -Q16F887 \
+  -oC:\Users\gerar\AppData\Local\Temp\xcAs1ao8.4 -ver=XC8 PIC(R) Assembler \
+  -Mdist/default/production/lab05_lab.X.production.map -E1 --acfsm=1493 \
+  -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
+  -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
+  -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
+  -ABANK3=0190h-01EFh -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
+  -ACONFIG=02007h-02008h -DCONFIG=2 -AIDLOC=02000h-02003h -DIDLOC=2 \
+  -AEEDATA=00h-0FFh/02100h -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 \
+  -DCONST=2 -DENTRY=2 build/default/production/lab05_lab_pgr.o 
+
+Object code version is 3.11
+
+Machine type is 16F887
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+build/default/production/lab05_lab_pgr.o
+                config                             2007     2007        2        0       4
+                intVect                               0        0       2F        0       0
+                resVect                               0        0        3        0       0
+                code                                  0        0      214        0       0
+                udata_bank0                          20       20        6       20       1
+                udata_shr                            70       70        3       70       1
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                intVect                               0        0       2F         0
+                resVect                               0        0        3         0
+                code                                  0        0      214         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   COMMON         
+                udata_shr                            70       70        3         1
+
+        CLASS   BANK0          
+                udata_bank0                          20       20        6         1
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+                config                             2007     2007        2         4
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                udata_bank0                    000020  000006  000026        20       1  BANK0       1
+                udata_shr                      000070  000003  000073        70       1  COMMON      1
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0026-006F             4A           1
+        BANK1            00A0-00EF             50           1
+        BANK2            0110-016F             60           1
+        BANK3            0190-01EF             60           1
+        CODE             0214-1FFF            800           2
+        COMMON           0073-007F              D           1
+        CONST            0214-1FFF            100           2
+        EEDATA           2100-21FF            100           2
+        ENTRY            0214-1FFF            100           2
+        IDLOC            2000-2003              4           2
+        RAM              0026-006F             4A           1
+                         00A0-00EF             50
+                         0110-016F             60
+                         0190-01EF             60
+        STRCODE          0214-1FFF           1DEC           2
+        STRING           0214-1FFF            100           2
+
+                                  Symbol Table
+
+__Hcode        code        0000  __Hconfig      config      2009
+__Hdata        data        0000  __Hedata       edata       0000
+__HintVect     intVect     0000  __HresVect     resVect     0000
+__Hspace_0     (abs)       0214  __Hspace_1     (abs)       0073
+__Hspace_3     (abs)       0000  __Hspace_4     (abs)       4010
+__Hudata       udata       0000  __Hudata_bank0 udata_bank0 0000
+__Hudata_bank1 udata_bank1 0000  __Hudata_bank2 udata_bank2 0000
+__Hudata_bank3 udata_bank3 0000  __Hudata_shr   udata_shr   0000
+__Lcode        code        0000  __Lconfig      config      0000
+__Ldata        data        0000  __Ledata       edata       0000
+__LintVect     intVect     0000  __LresVect     resVect     0000
+__Lspace_0     (abs)       0000  __Lspace_1     (abs)       0000
+__Lspace_3     (abs)       0000  __Lspace_4     (abs)       0000
+__Ludata       udata       0000  __Ludata_bank0 udata_bank0 0000
+__Ludata_bank1 udata_bank1 0000  __Ludata_bank2 udata_bank2 0000
+__Ludata_bank3 udata_bank3 0000  __Ludata_shr   udata_shr   0000
+__S0           (abs)       0000  __S1           (abs)       0073
+__S3           (abs)       0000  
